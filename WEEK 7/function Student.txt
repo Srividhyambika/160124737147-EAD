@@ -1,0 +1,33 @@
+import React, { useState } from "react";
+
+function Student(props) {
+  return (
+    <div>
+      <h3>Student Name: {props.name}</h3>
+      <h3>Age: {props.age}</h3>
+    </div>
+  );
+}
+
+function App() {
+  const [name, setName] = useState("John");
+  const [age, setAge] = useState(20);
+
+  const updateData = () => {
+    setName("Alice");
+    setAge(22);
+  };
+
+  return (
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h2>State and Props Example</h2>
+
+      {/* Passing props */}
+      <Student name={name} age={age} />
+
+      <button onClick={updateData}>Update Data</button>
+    </div>
+  );
+}
+
+export default App;
