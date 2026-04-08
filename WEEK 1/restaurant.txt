@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Restaurant Menu</title>
+</head>
+<body>
+
+    <h1 align="center">Welcome to Food Corner</h1>
+
+    <h2>Starters</h2>
+    <ul>
+        <li>Veg Spring Rolls</li>
+        <li>Paneer Tikka</li>
+        <li>Chicken 65</li>
+    </ul>
+
+    <h2>Main Course</h2>
+    <ol>
+        <li>Veg Biryani</li>
+        <li>Chicken Biryani</li>
+        <li>Butter Naan with Paneer Butter Masala</li>
+    </ol>
+
+    <h2>Desserts</h2>
+    <ul>
+        <li>Gulab Jamun</li>
+        <li>Ice Cream</li>
+        <li>Chocolate Brownie</li>
+    </ul>
+
+    <hr>
+    <hr>
+
+    <p align="right">Name: Gubba Sri Vidyambika</p>
+    <p align="right">Roll No: 160124737147</p>
+
+</body>
+</html>

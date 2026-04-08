@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form>
+        <!-- Name -->
+        <label>Full Name:</label><br>
+        <input type="text" name="name"><br><br>
+
+        <!-- Email -->
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <!-- Password -->
+        <label>Password:</label><br>
+        <input type="password" name="password"><br><br>
+
+        <!-- Gender (Radio Buttons) -->
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br><br>
+
+        <!-- Course (Dropdown) -->
+        <label>Select Course:</label><br>
+        <select name="course">
+            <option>BCA</option>
+            <option>BBA</option>
+            <option>B.Tech</option>
+            <option>B.Com</option>
+        </select><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+
+    </form>
+
+</body>
+</html>
+
+
+OUTPUT:-
+
+Full Name:
+
+
+Email:
+
+
+Password:
+
+
+Gender:
+ Male
+ Female
+
+Select Course:
+
+BCA
+
+
