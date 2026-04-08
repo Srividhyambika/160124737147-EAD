@@ -1,0 +1,59 @@
+import React, { useState } from "react";
+
+function Form() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: ""
+  });
+
+ 
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert("Name: " + formData.name + "\nEmail: " + formData.email);
+  };
+
+  return (
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h2>Controlled Form</h2>
+
+      <form onSubmit={handleSubmit}>
+        <div>
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter Name"
+            value={formData.name}
+            onChange={handleChange}
+          />
+        </div>
+
+        <br />
+
+        <div>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter Email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+        </div>
+
+        <br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  );
+}
+
+export default Form;
