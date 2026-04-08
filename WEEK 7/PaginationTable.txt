@@ -1,0 +1,76 @@
+import React, { useState } from "react";
+
+function PaginationTable() {
+  const data = [
+    { id: 1, name: "John" },
+    { id: 2, name: "Alice" },
+    { id: 3, name: "Bob" },
+    { id: 4, name: "David" },
+    { id: 5, name: "Emma" },
+    { id: 6, name: "Chris" },
+    { id: 7, name: "Sophia" },
+    { id: 8, name: "Daniel" },
+    { id: 9, name: "Olivia" },
+    { id: 10, name: "James" }
+  ];
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const rowsPerPage = 3;
+
+  // Calculate indexes
+  const indexOfLast = currentPage * rowsPerPage;
+  const indexOfFirst = indexOfLast - rowsPerPage;
+
+  const currentRows = data.slice(indexOfFirst, indexOfLast);
+
+  const totalPages = Math.ceil(data.length / rowsPerPage);
+
+  return (
+    <div style={{ textAlign: "center", marginTop: "30px" }}>
+      <h2>Pagination Table</h2>
+
+      <table border="1" align="center" cellPadding="10">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {currentRows.map((item) => (
+            <tr key={item.id}>
+              <td>{item.id}</td>
+              <td>{item.name}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <br />
+
+      {/* Pagination Buttons */}
+      <div>
+        <button
+          onClick={() => setCurrentPage(currentPage - 1)}
+          disabled={currentPage === 1}
+        >
+          Prev
+        </button>
+
+        <span style={{ margin: "0 10px" }}>
+          Page {currentPage} of {totalPages}
+        </span>
+
+        <button
+          onClick={() => setCurrentPage(currentPage + 1)}
+          disabled={currentPage === totalPages}
+        >
+          Next
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export default PaginationTable;
