@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+</head>
+<body>
+
+    <h1>Student Details</h1>
+
+    <button onclick="showDetails()">Show Details</button>
+
+    <p id="output"></p>
+
+    <script>
+      
+        let student1 = {
+            name: "Ravi",
+            age: 20,
+            marks: [85, 90, 88]
+        };
+
+        let student2 = {
+            name: "Anita",
+            age: 19,
+            marks: [78, 82, 80]
+        };
+
+        let students = [student1, student2];
+
+        function showDetails() {
+            let result = "";
+
+            for (let i = 0; i < students.length; i++) {
+                result += "Name: " + students[i].name + "<br>";
+                result += "Age: " + students[i].age + "<br>";
+                result += "Marks: " + students[i].marks + "<br><br>";
+            }
+
+            document.getElementById("output").innerHTML = result;
+        }
+    </script>
+
+</body>
+</html>

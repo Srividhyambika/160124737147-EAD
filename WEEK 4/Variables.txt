@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Variables and Data Types</title>
+</head>
+<body>
+
+    <h1>JavaScript Variables Demo</h1>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Variables and Data Types</title>
+</head>
+<body>
+
+    <h1>JavaScript Variables Demo</h1>
+
+    <script>
+        var a = 10;          
+        let name = "John";   
+        const isStudent = true; 
+
+        let person = {age: 20, city: "Delhi"};  
+        let marks = [90, 85, 88];               
+        console.log("Number:", a);
+        console.log("String:", name);
+        console.log("Boolean:", isStudent);
+        console.log("Object:", person);
+        console.log("Array:", marks);
+
+        alert("Name: " + name);
+
+        {
+            var x = 5;
+            let y = 10;
+            const z = 15;
+
+            console.log("Inside block:");
+            console.log(x); 
+            console.log(y);
+            console.log(z); 
+        }
+
+        console.log("Outside block:");
+        console.log(x); 
+
+      
+
+    </script>
+
+</body>
+</html>

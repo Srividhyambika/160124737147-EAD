@@ -1,0 +1,19 @@
+// Function Declaration
+function add(a, b) {
+    return a + b;
+}
+
+// Function Expression
+const multiply = function(a, b) {
+    return a * b;
+};
+
+// Arrow Function
+const subtract = (a, b) => {
+    return a - b;
+};
+
+// Calling functions
+console.log("Addition:", add(5, 3));
+console.log("Multiplication:", multiply(5, 3));
+console.log("Subtraction:", subtract(5, 3));
