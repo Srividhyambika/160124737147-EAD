@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class Time Table</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        .table th, .table td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .subject {
+            background-color: #cce5ff;
+        }
+
+        .break {
+            background-color: #f8d7da;
+            font-weight: bold;
+        }
+
+        .header {
+            background-color: #343a40;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Class Time Table</h2>
+
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr class="header">
+                    <th>Day / Time</th>
+                    <th>9-10</th>
+                    <th>10-11</th>
+                    <th>11-12</th>
+                    <th>12-1</th>
+                    <th>1-2</th>
+                    <th>2-3</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>Monday</th>
+                    <td class="subject">Math</td>
+                    <td class="subject">Physics</td>
+                    <td class="subject">Chemistry</td>
+                    <td class="break">Lunch</td>
+                    <td class="subject">English</td>
+                    <td class="subject">Lab</td>
+                </tr>
+
+                <tr>
+                    <th>Tuesday</th>
+                    <td class="subject">Biology</td>
+                    <td class="subject">Math</td>
+                    <td class="subject">Physics</td>
+                    <td class="break">Lunch</td>
+                    <td class="subject">Chemistry</td>
+                    <td class="subject">Sports</td>
+                </tr>
+
+                <tr>
+                    <th>Wednesday</th>
+                    <td class="subject">English</td>
+                    <td class="subject">Biology</td>
+                    <td class="subject">Math</td>
+                    <td class="break">Lunch</td>
+                    <td class="subject">Physics</td>
+                    <td class="subject">Lab</td>
+                </tr>
+
+                <tr>
+                    <th>Thursday</th>
+                    <td class="subject">Chemistry</td>
+                    <td class="subject">English</td>
+                    <td class="subject">Biology</td>
+                    <td class="break">Lunch</td>
+                    <td class="subject">Math</td>
+                    <td class="subject">Sports</td>
+                </tr>
+
+                <tr>
+                    <th>Friday</th>
+                    <td class="subject">Physics</td>
+                    <td class="subject">Chemistry</td>
+                    <td class="subject">English</td>
+                    <td class="break">Lunch</td>
+                    <td class="subject">Biology</td>
+                    <td class="subject">Lab</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
