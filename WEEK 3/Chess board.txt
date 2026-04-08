@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chessboard</title>
+
+    <style>
+        .board {
+            width: 320px;
+            height: 320px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .cell {
+            width: 40px;
+            height: 40px;
+        }
+
+        .black {
+            background-color: black;
+        }
+
+        .white {
+            background-color: white;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Chess Board</h1>
+
+    <div class="board">
+
+        <!-- Row 1 -->
+        <div class="row">
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row">
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+        </div>
+
+        <!-- Repeat same pattern for 8 rows -->
+
+        <!-- Row 3 -->
+        <div class="row">
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="row">
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+        </div>
+
+        <!-- Row 5 -->
+        <div class="row">
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+        </div>
+
+        <!-- Row 6 -->
+        <div class="row">
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+        </div>
+
+        <!-- Row 7 -->
+        <div class="row">
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+        </div>
+
+        <!-- Row 8 -->
+        <div class="row">
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
