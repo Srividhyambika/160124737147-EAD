@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Images with Captions</title>
+</head>
+<body>
+
+    <h1>Image Gallery</h1>
+
+    <div>
+        <figure>
+            <img src="image1.jpg" width="200" height="150">
+            <figcaption>Beautiful Nature</figcaption>
+        </figure>
+    </div>
+
+    <div>
+        <figure>
+            <img src="image2.jpg" width="200" height="150">
+            <figcaption>Sunset View</figcaption>
+        </figure>
+    </div>
+
+    <div>
+        <figure>
+            <img src="image3.jpg" width="200" height="150">
+            <figcaption>Mountain Landscape</figcaption>
+        </figure>
+    </div>
+
+</body>
+</html>
+
+OUTPUT:-
+
+Image Gallery
+
+Beautiful Nature
+
+Sunset View
+
+Mountain Landscape
